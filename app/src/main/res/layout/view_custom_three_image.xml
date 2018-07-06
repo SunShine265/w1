@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color_dialog"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/image_picker1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/imageview_picker1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_with_bg" />
+        <ImageView
+            android:id="@+id/iv_delete1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/image_picker2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageview_picker2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_with_bg" />
+        <ImageView
+            android:id="@+id/iv_delete2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/image_picker3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imageview_picker3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:background="@color/white"
+            android:cropToPadding="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/plus_with_bg" />
+        <ImageView
+            android:id="@+id/iv_delete3"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="right"
+            android:padding="3dp"
+            android:visibility="gone"
+            android:src="@android:drawable/ic_menu_close_clear_cancel" />
+    </FrameLayout>
+</LinearLayout>

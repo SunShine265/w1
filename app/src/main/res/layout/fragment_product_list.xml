@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.wo1haitao.views.ActionBarProject>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "72"
+                custom:fit_width = "72"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/ic_all_product" />
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:visibility="gone"
+                android:id="@+id/txt_choose_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_choose_category"
+                android:lines="1"
+                android:textSize="@dimen/textSizeProductList" />
+            <com.wo1haitao.controls.CustomEditextSoftkey
+                android:id="@+id/edt_choose_category"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="全部分类"
+                android:inputType="text"
+                android:lines="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                android:textSize="44px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "72"
+                custom:fit_width = "72"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/ic_country_product" />
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:visibility="gone"
+                android:id="@+id/txt_choose_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint="@string/hint_choose_country"
+                android:lines="1"
+                android:textSize="@dimen/textSizeProductList" />
+            <com.wo1haitao.controls.CustomEditextSoftkey
+                android:id="@+id/edt_choose_country"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="全部国家"
+                android:inputType="text"
+                android:lines="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:focusableInTouchMode="false"
+                android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                android:textSize="44px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_filter"
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:background="@color/white"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:clickable="true"
+            android:gravity="center">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "72"
+                custom:fit_width = "72"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:background="@drawable/ic_filter_product"
+                android:clickable="false" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/sortView"
+            android:layout_width="60sp"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_marginLeft="2dp"
+            android:background="@color/white"
+            android:gravity="center">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "72"
+                custom:fit_width = "72"
+                android:id="@+id/iv_list_to_gird"
+                android:layout_width="80px"
+                android:layout_height="80px"
+                android:src="@drawable/ic_show_grid_pd" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_grey" />
+
+    <LinearLayout
+        android:id="@+id/dialog_filter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/advance_search_filter_title"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <Spinner
+                android:id="@+id/id_sp_filter"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/spinner"
+                android:spinnerMode="dropdown">
+            </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="3"
+            android:gravity="start"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/advance_search_checkbox_title"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_new_product"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/title_product_new"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="end"
+            android:visibility="invisible"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/check_used_product"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="0dp"
+                    android:checked="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/title_product_used"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_grey" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/listview_background"
+        android:descendantFocusability="blocksDescendants">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:horizontalSpacing="3dp"
+                    android:numColumns="2"
+                    android:verticalSpacing="3dp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/emptyElementGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/empty_list"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh_layout_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal">
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants" />
+
+                <TextView
+                    android:id="@+id/emptyElementList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="10dp"
+                    android:text="@string/empty_list"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+</com.wo1haitao.views.CustomLayoutMain>

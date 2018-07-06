@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tvVersion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="v1.0.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_text_hint"/>
+
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="@string/btn_popup_menu_profile_setting"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_text_hint"/>
+
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tv_webchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="联络我们"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_text_hint"/>
+
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tvTerm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="@string/btn_terms"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_text_hint"/>
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tvCondition"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="@string/btn_condition"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:background="@color/dialog_text_hint"/>
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tv_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="@string/txt_change_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dialog_text_hint"/>
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tv_change_alipay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/profile_menu"
+        android:gravity="center"
+        android:minEms="6"
+        android:minHeight="@dimen/textSizeLarge"
+        android:text="! 我的支付宝账户信息"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textSize" />
+</LinearLayout>

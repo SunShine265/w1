@@ -1,0 +1,18 @@
+<tabs>
+    <tab
+        id="@+id/tab_home"
+        icon="@drawable/tab_icon_home"
+        />
+    <tab
+        id="@+id/tab_global"
+        icon="@drawable/tab_icon_notification"
+         />
+    <tab
+        id="@+id/tab_chat"
+        icon="@drawable/tab_icon_chat"
+        />
+    <tab
+        id="@+id/tab_profile"
+        icon="@drawable/tab_icon_profile"
+        />
+</tabs>

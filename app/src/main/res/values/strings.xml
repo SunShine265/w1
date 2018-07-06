@@ -1,0 +1,566 @@
+<resources>
+    <string name="app_name">我要海淘</string>
+
+    <string name="title_login">登录我要海淘</string>
+    <string name="title_terms_of_use">服务条款</string>
+    <string name="title_privacy_policy">隐私条款</string>
+    <string name="title_mail_resend">重新发送确认邮件</string>
+    <string name="title_blank"> </string>
+    <string name="title_profile">我的账户</string>
+    <string name="title_home_buyer">当个代购</string>
+    <string name="tit_chat_detail"></string>
+
+
+    //login
+    <string name="form_login_email">电子邮箱地址</string>
+    <string name="form_password">密码</string>
+    <string name="form_btn_login">登录</string>
+    <string name="register">注册新账户</string>
+    <string name="form_forget_password">忘记密码?</string>
+    <string name="form_no_confirm_email_received">没有收到确认邮件?</string>
+    <string name="instruction_register">在注册的同时您已同意我要海淘的\n</string>
+    <string name="of_term">的</string>
+    <string name="btn_term">服务政策</string>
+    <string name="with_condition">和</string>
+    <string name="btn_condition">隐私条款</string>
+
+    <string name="form_bn_active_mail">好的</string>
+    <string name="form_username">昵称</string>
+    <string name="form_email">电子邮箱地址</string>
+    <string name="form_resend_email">电子邮箱必填</string>
+    <string name="form_forget_password_page">请输入您注册过的电子邮件地址</string>
+    <string name="form_confirm_password">确认密码</string>
+    <string name="form_login_description">几分钟后，您将收到确认帐\n号的电子邮件.</string>
+    <string name="to_login_page">登陆</string>
+    <string name="form_btn_register">注册</string>
+    <string name="form_btn_register_login">已注册用户登陆</string>
+    <string name="form_btn_resend_email">重新发送确认邮件</string>
+    <string name="form_btn_resend_email_to_register">已注册用户登录</string>
+    <string name="form_btn_send_forget_password">请给我发送重设密码的邮件</string>
+    <string name="form_btn_confirm">确认</string>
+    <string name="delivery_method_hint">买家选择的运送方式 \n1. 快速邮递 \n2. 普通邮递</string>
+    <string name="form_check_terms">
+        <![CDATA[
+            在注册的同时您已同意我要海淘<br/>的<a href="terms" style="color:#be262a;">服务政策</a>和<a href="policy"  style="color:#be262a;">隐私条款</a>
+        ]]>
+    </string>
+    <string-array name="america_group">
+        <item>美国</item>
+        <item>加拿大</item>
+    </string-array>
+    <string-array name="euro_group">
+        <item>德国</item>
+        <item>西班牙</item>
+        <item>英国</item>
+        <item>瑞士</item>
+        <item>法国</item>
+        <item>意大利</item>
+    </string-array>
+    <string-array name="autralia_group">
+        <item>澳大利亚</item>
+        <item>新西兰</item>
+        <item>斐济</item>
+    </string-array>
+    <string-array name="asia_group">
+        <item>新加坡</item>
+        <item>马来西亚</item>
+        <item>台湾地区</item>
+        <item>日本</item>
+        <item>泰国</item>
+        <item>越南</item>
+        <item>澳门地区</item>
+        <item>韩国</item>
+        <item>印度尼西亚</item>
+        <item>中国</item>
+        <item>香港地区</item>
+    </string-array>
+    <string name="america">美洲</string>
+    <string name="asia">亚洲</string>
+    <string name="europe">欧洲</string>
+    <string name="aus">大洋洲</string>
+    <string name="other">其他地区</string>
+    <string name="middleeast">中东地区</string>
+    <string name="all">全部国家</string>
+    <string name="form_lastname">姓</string>
+    <string name="form_firstname">名</string>
+    <string name="form_email_profile">电邮地址</string>
+    <string name="form_telephone_profile">联络电话</string>
+    <string name="form_country">当所在国家</string>
+    <string name="form_current_password">当前密码</string>
+    <string name="form_alipay_user_name">支付宝账户的实名</string>
+    <string name="form_alipay_register_name">支付宝账户</string>
+    <string name="form_new_password">新密码</string>
+    <string name="form_profile_confirm_password">确认新密码</string>
+    <string name="form_product_spinner_hint">产品所在国家</string>
+    <string-array name="form_product_edit_spinner">
+        <item>产品所在国家</item>
+    </string-array>
+    <string name="form_prfile_edit_spinner_hint">当所在国家</string>
+    <string-array name="form_profile_edit_spinner">
+        <item>当所在国家</item>
+    </string-array>
+
+    <string name="content_privacy_policy">服务条款服务条款服务条款服务封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。条款服务条款服务条款服务条款款服务条款服务条款服务条款务条款服务条款款服务条款封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。服务条款服务条款服务条款服务服务条款服务条封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条</string>
+    <string name="content_terms_of_use">服务条款服务条款服务条款服务条款服务条款服务条款服务条封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条款服务条</string>
+
+    <string name="btn_return">返回</string>
+    <string name="btn_save_changes">确认并支付</string>
+    <string name="save_address">确定</string>
+    <string name="btn_advertise_purchase">浏览广告</string>
+    <string name="btn_advertise_buyer">发布广告</string>
+    <string name="btn_save_Eva">确定</string>
+
+    <string name="content_mail_active">一封确认邮件已经发至您的邮箱，请点击其中的链接激活您的账号。</string>
+    <string name="txt_wait_send_mail">几分钟后，您将收到确认帐\n号的电子邮件.</string>
+    <string name="txt_change_password">更改我的密码</string>
+    <string name="txt_title_alipay">我的支付宝账户信息</string>
+
+    <string name="txt_alipay_section">更改我的密码</string>
+
+    <string name="txt_buyer_homepage">当个买家</string>
+    <string name="txt_purchase_homepage">当个代购</string>
+    <string name="txt_popular">最受欢迎的搜素</string>
+    <string name="txt_say_you_want">语音搜索</string>
+
+    <string name="txt_user_avt">用户头像</string>
+
+    <string name="txt_select_option"> 您最感兴趣的话题 (至少3个）</string>
+    <string name="category_healthy_food"> 健康食品 </string>
+    <string name="category_collection"> 收藏品 </string>
+    <string name="category_other_items"> 其它物品 </string>
+    <string name="category_bag"> 包包 </string>
+    <string name="category_furniture"> 家具 </string>
+    <string name="category_watch"> 手表 </string>
+    <string name="category_clothing"> 服装 </string>
+    <string name="category_electrical_appliances"> 电器 </string>
+    <string name="category_jewelry"> 首饰 </string>
+    <string name="category_sporting_goods"> 运动用品 </string>
+
+    <string name="txt_all_category">全部分类</string>
+    <string name="txt_all_country">全部国家</string>
+    <string name="form_product_bid_none">出价</string>
+    <string name="bt_no_ad">发不\n广告</string>
+    <string name="form_product_bid">出价 (¥)</string>
+    <string name="form_product_commodity_status">产品照片（选填)</string>
+    <string name="form_product_commodity_status_one">产品照片</string>
+    <string name="form_product_country_merchandise">产品所在国家</string>
+    <string name="form_product_choice__delivery">买家选择的运送方式</string>
+    <string name="form_product_delivery_quick_post">1. 快速邮递</string>
+    <string name="form_product_delivery_ordinary_post">2. 普通邮递</string>
+    <string name="form_product_advise_way_delivery">您建议的运送方式</string>
+    <string name="form_product_shipping_method">选择运送方式</string>
+    <string name="form_product_shipping_fee">运输费</string>
+    <string name="form_product_estimated_delivery_time">预计送达时间</string>
+    <string name="form_product_leave_message">产品详情</string>
+    <string name="dialog_pick_image_choose_option">选择选项...</string>
+    <string name="txt_no_mail_receive">没有收到确认邮件?.</string>
+
+    <string name="suget_delivery_method">建议的运送方式</string>
+
+    <string name="no_advesting">出价</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_address_payment">确认订单</string>
+    <string name="form_address_default">默认地址</string>
+    <string name="form_set_address_default">设定为默认地址</string>
+    <string name="form_choose_country">国家</string>
+    <string name="form_location_address">地址</string>
+    <string name="form_province">省份</string>
+    <string name="form_post_office_no">邮政编码</string>
+    <string name="form_city">城市</string>
+    <string name="form_ship_address">与收货地址</string>
+    <string name="form_iput_new_address">添加新地址</string>
+
+    <string name="title_duplicate">复制广告</string>
+    <string name="title_request_purchase">求购广告详情</string>
+    <string name="title_request_purchase_edit">更改广告</string>
+    <string name="btn_save_request_purchase_edit">保存</string>
+    <string name="title_request_purchase_duplicate">复制广告</string>
+    <string name="form_product_name">产品名称</string>
+    <string name="form_category_hint">产品分类</string>
+    <string-array name="form_category_list">
+        <item>全部分类</item>
+        <item>电器</item>
+        <item>家具</item>
+        <item>服装</item>
+        <item>首饰</item>
+        <item>健康食品</item>
+        <item>手表</item>
+        <item>收藏品</item>
+        <item>其它物品</item>
+        <item>包包</item>
+        <item>运动用品</item>
+    </string-array>
+    <integer-array name="category_image">
+        <item>@drawable/electronic</item>
+        <item>@drawable/furniture</item>
+        <item>@drawable/fashion</item>
+        <item>@drawable/jewellery</item>
+        <item>@drawable/helthy_food_product</item>
+        <item>@drawable/watch</item>
+        <item>@drawable/others</item>
+        <item>@drawable/collectable</item>
+        <item>@drawable/bags</item>
+        <item>@drawable/worout_equipment</item>
+    </integer-array>
+    <string name="form_logistics_info">优先选择的物流方式</string>
+    <string name="form_new">全新</string>
+    <string name="form_used">二手</string>
+    <string name="form_any_country">不限国家</string>
+    <string name="form_country_product">当前所在国家</string>
+    <string-array name="list_country_product">
+        <item>全部国家</item>
+        <item>中国</item>
+        <item>加拿大</item>
+        <item>印度尼西亚</item>
+        <item>台湾地区</item>
+        <item>德国</item>
+        <item>意大利</item>
+        <item>新加坡</item>
+        <item>新西兰</item>
+        <item>日本</item>
+        <item>法国</item>
+        <item>泰国</item>
+        <item>澳大利亚</item>
+        <item>澳门地区</item>
+        <item>瑞士</item>
+        <item>美国</item>
+        <item>英国</item>
+        <item>西班牙</item>
+        <item>越南</item>
+        <item>韩国</item>
+        <item>香港地区</item>
+        <item>马来西亚</item>
+    </string-array>
+    <string-array name="list_logic_info">
+        <item>国内现货</item>
+        <item>快速邮递</item>
+        <item>普通邮递</item>
+    </string-array>
+    <string name="form_condition_product">产品状态</string>
+    <string-array name="list_condition">
+        <item>全新</item>
+        <item>二手</item>
+    </string-array>
+    <string name="form_method_shipping">选择运送方式</string>
+    <string-array name="list_method_shipping">
+        <item>国内现货</item>
+        <item>快速邮递</item>
+        <item>普通邮递</item>
+    </string-array>
+    <string name="title_verify">实名认证</string>
+    <string name="bt_ok">好的</string>
+    <string name="bt_setup_account_verify">好的</string>
+    <string name="bt_ok_verify">好的</string>
+    <string name="bt_skip_verify">忽略这一步</string>
+    <string name="verify_text_top">请上传您的身份证件验证来您的个人信息</string>
+    <string name="verify_text_bot">请参照示范</string>
+    <string name="sport_goods">运动用品</string>
+    <string name="ad_limmit">广告会在%1$d 天后过期</string>
+    <string name="date_limit_notification">%1$d天之后过期 </string>
+    <string name="price_accept">买家已接受出价 ¥&#160;%1$s</string>
+    <string name="hint_comment_product">有问题？来这里向买家提问！\n  （您的问题与买家的回复为公开可见)</string>
+    <string name="bt_send">发送</string>
+    <string name="title_my_collection">我的最爱的广告</string>
+    <string name="title_my_global">通知</string>
+    <string name="title_my_gen_favorite">我的收藏</string>
+    <string name="title_my_post">我发布的广告</string>
+    <string name="title_my_addresspay">我的地址</string>
+    <string name="btn_commit_order_address">保存</string>
+    <string name="btn_commit_address">确定</string>
+    <string name="title_my_addresspay_acceptBid">收货地址</string>
+    <string name="lower_simpol">&#94;</string>
+    <string name="title_policy">隐私政策</string>
+    <string name="product_review">(%1$d 评价)</string>
+    <string name="product_offer_price">代购的再出价 ¥%1$s</string>
+    <string name="product_counter_offer">买家的还价: ¥%1$s</string>
+    <string name="respone">回应</string>
+    <string name="bid_count">%1$d 个出价</string>
+    <string name="shipping_method">物流方式</string>
+    <string name="product_photo">产品照片（选填)</string>
+    <string name="currency_china">¥</string>
+    <string name="bt_offer">还价</string>
+    <string name="bt_discount">折扣</string>
+    <string name="bt_invoice">新发票</string>
+    <string name="bt_accept">接受</string>
+    <string name="bt_cancle">拒绝</string>
+    <string name="title_cancel_offer">请确认</string>
+    <string name="content_cancel_offer">您确定要拒绝这出价吗?</string>
+    <string name="bt_destroy">取消</string>
+    <string name="bt_offer_currency">还价 (¥)</string>
+    <string name="hint_counter_here">请在这里还价</string>
+    <string name="hint_tracking_number">追踪号码</string>
+    <string name="name_shipping_company">船公司名称</string>
+    <string name="hint_leave_mes_here">请在这里留言</string>
+    <string name="hint_upload_picture_invoice">点击或拖动照片来这里</string>
+    <string name="commission_charges_percent">服务费 (%1$s %%)</string>
+    <string name="delivery_fee">运送费</string>
+    <string name="sum_money">总金额</string>
+    <string name="type_payment">付款方式</string>
+    <string name="bank_tranf">银行转账</string>
+    <string name="title_shop_bid">代购的出价</string>
+    <string name="title_detail_shop_counter_buyer">您的还价</string>
+    <string name="title_detail_counter_shop_bid_seller">买家的还价</string>
+    <string name="title_detail_shop_offer_buyer">代购的出价</string>
+    <string name="title_detail_shop_offer_seller">您的出价</string>
+    <string name="title_offer_dialog">代购的出价</string>
+    <string name="station_leter">站内信</string>
+    <string name="please_repay">买家选择远送方式</string>
+    <string name="something_wrong">没有互联网连接或无法连接服务器！</string>
+    <string name="not_network">无法连接到服务器!</string>
+    <string name="err_select_category">您必须选择三个产品分类</string>
+    <string name="in_progress">请稍等...</string>
+    <string name="title_my_bid">我的出价</string>
+    <string name="title_terms">服务条款</string>
+    <string name="title_conditions">隐私政策</string>
+    <string name="form_product_bid_price">出价 ¥ %1$s</string>
+    <string name="form_product_counter_offer_price">还价 ¥ %1$s</string>
+    <string name="form_product_re_bid_price">重新出价 ¥ %1$s</string>
+    <string name="title_all_evaluation">全部评价</string>
+    <string name="title_feedback">我的申诉</string>
+    <string name="bt_voting">发表评价</string>
+    <string name="tab_not_yet_cmt">未评价</string>
+    <string name="tab_cmt_rc">作为买家</string>
+    <string name="tab_given_cmt">作为代购</string>
+    <integer name="anima">800</integer>
+    <string name="btn_exit_detail">关闭</string>
+    <string name="tit_comment_tender">提问与回答</string>
+    <string name="title_detail_order">订单详情</string>
+
+    <string name="category_value">分类: %1$s</string>
+    <string name="country_value">所在国家: %1$s</string>
+    <string name="num_of_offers">%1$d个出价</string>
+    <string name="num_of_offers_product_list">%1$d个出价</string>
+    <!--<string name="offer_price_1">代购的出价: ¥%1$s</string>-->
+    <!--<string name="reoffer_price_1">代购的再出价: ¥%1$s</string>-->
+    <!--<string name="product_counter_offer_1">买家的还价: ¥%1$s</string>-->
+    <!--<string name="offer_price">代购的出价: ¥%1$s</string>-->
+    <!--<string name="reoffer_price">代购的再出价: ¥%1$s</string>-->
+    <string name="offer_price_1">出价: ¥%1$s</string>
+    <string name="reoffer_price_1">重新出价: ¥%1$s</string>
+    <string name="product_counter_offer_1">还价: ¥%1$s</string>
+    <string name="offer_price">出价: ¥%1$s</string>
+    <string name="reoffer_price">出价: ¥%1$s</string>
+    <string name="reason_complain">投诉原因: %1$s</string>
+    <string name="detail_complain">投诉详情: %1$s</string>
+    <string name="name">用户名：%1$s</string>
+    <string name="arrow_right">&#60;</string>
+    <string name="title_dialog_evaluation_my_bid">请给代购发表评价</string>
+    <string name="title_dialog_evaluation">请给买家发表评价</string>
+    <string name="review_message_hint_text">请发表评价详情</string>
+
+    //Dispute
+    <string name="hint_name_dispute">投诉原因</string>
+    <string name="hint_content_dispute">投诉详情</string>
+    <string name="btn_save_dispute">投诉交易</string>
+
+    //Home
+    <string name="btn_buyer">当个买家</string>
+    <string name="btn_purchase">当个代购</string>
+
+    //Payment
+    <string name="notify_payment">恭喜您成功付款</string>
+
+    //Product list
+    <string name="hint_choose_category">全部分类</string>
+    <string name="hint_choose_country">全部国家</string>
+    <string name="advance_search_filter_title">俳序</string>产品状态
+    <string name="advance_search_checkbox_title">产品状态</string>
+    <string name="title_product_new">全新</string>
+    <string name="title_product_used">二手</string>
+
+    //chat detail
+    <string name="num_offer_chat_detail">(%1$d 评价)</string>
+
+    //edit profile
+    <string name="txt_avatar">用户头像</string>
+    <string name="btn_save_edit_profile">保存</string>
+    <string name="btn_save_setup_account_profile">确认</string>
+    <string name="change_password_success">您已成功更新密码</string>
+
+    //verify
+    <string name="title_top_verify">选择您所在的国家或地区，\n看看大家想在您的地区买些什么</string>
+
+    //evaluation
+    <string name="title_category">分类:&#160;</string>
+    <string name="title_country">所在国家:&#160;</string>
+    <string name="btn_save_my_review">发表评价</string>
+    <string name="title_rating_communication_review">通讯</string>
+    <string name="title_rating_description_product_review">产品描述精度</string>
+    <string name="title_rating_transport_review">运输回应</string>
+    <string name="user_name_review">%1$s给你的评价</string>
+
+    //feedback
+    <string name="title_reason_complain">投诉原因: %1$s</string>
+    <string name="title_detail_complain">投诉详情: %1$s</string>
+
+    //gen favourite
+    <string name="is_bid">%1$s个出价</string>
+
+    //tab notification
+    <string name="state_notification">包包 - 限国家</string>
+
+    <string name="title_ship_method">请您还价</string>
+    <string name="hint_name_shipping_method">物流方式</string>
+    <string name="hint_price_shipping_method">运输费</string>
+    <string name="hint_arrival_day_shipping_method">预计送达时间</string>
+    <string name="title_commodity_status">产品状态</string>
+    <string name="title_country_merchandise">产品所在国家</string>
+    <string name="title_detail_price_counter_offer">还价 (¥)</string>
+    <string name="title_remarks_offer">留言</string>
+    <string name="title_price_offer">出价 (¥)</string>
+    <string name="title_feed_back">请选下面其中一种类别的举报。</string>
+    <string name="title_illegal_feed_back">非法产品</string>
+    <string name="title_wrong_category_feed_back">错误的产品类别</string>
+    <string name="title_duplicate_ads_feed_back">重复的广告</string>
+    <string name="title_pornographic_products_feed_back">色情产品</string>
+    <string name="title_provoke_feed_back">挑衅言论与行为</string>
+    <string name="title_transaction_number">交易号:&#160;</string>
+    <string name="title_invoice_status">发票状态:&#160;</string>
+    <string name="title_suggest_delivery_method">代购可以提供的运送方式</string>
+    <string name="title_offer_detail">您之前开价详情</string>
+    <string name="title_reoffer_detail">买家还价详情</string>
+    <string name="title_infor_rebid">请您出价</string>
+    <string name="hint_offer_price">请您出价</string>
+    <string name="title_advise_shipping">建议的运送方式</string>
+    <string name="hint_method_shipping">选择远送方式</string>
+    <string name="hint_shipping_cost">远输费</string>
+    <string name="hint_shipping_expected_arrival_day">预计送达时间</string>
+    <string name="hint_remarks_offer">请在这里留言</string>
+    <string name="title_list_image_products">产品照片（选填)</string>
+    <string name="title_offer_price">出价 ($)</string>
+    <string name="btn_feed_back">确定</string>
+
+    //dialog checkout
+    <string name="title_dialog_shipping_method">选择远送方式</string>
+    <string name="title_select_shipping">远送方式</string>
+    <string name="btn_checkout">去结账</string>
+    <string name="btn_cancel_checkout">取消</string>
+
+    //dialog bid
+    <string name="title_infor_bid">请您出价</string>
+    <string name="title_condition_bid">产品状态</string>
+    <string name="title_country_bid">产品所在国家</string>
+    <string name="btn_save_offer">出价</string>
+
+    <string name="btn_popup_menu_profile_setting">退出账号</string>
+    <string name="btn_terms">服务条款</string>
+    <!--<string name="btn_condition">隐私政策</string>-->
+    <string name="title_question_tender">提问与回答</string>
+    <string name="title_change_password">更改我的密码</string>
+
+    //item product tender
+    <string name="name_pending">等待代购发货</string>
+    <string name="name_received">买家确认交货</string>
+    <string name="name_finish_transaction">家买确认收到</string>
+
+    //setup account
+    <string name="last_name">姓</string>
+    <string name="first_name">名</string>
+
+    //Detail order
+    <string name="confirm_order">确认订单</string>
+    <string name="content_bank_transfer">银行转帐，请使用您的交易编号作为汇款备注。您的交易将在买家收到货款后确认完成。</string>
+    <string name="title_pay_method">银行转账</string>
+    <string name="transaction_detail">交易详情</string>
+    <string name="title_trade_number">交易编号: </string>
+    <string name="date_of_transaction">交易日期: </string>
+    <string name="pay_method">付款方式: </string>
+    <string name="total_mount">付款总金额: </string>
+    <string name="payment_detail">付款详情</string>
+    <string name="bank_account_number">银行账户号码</string>
+    <string name="bank_account_information">银行账户信息备注</string>
+    <string name="title_product_information">产品讯息</string>
+    <string name="information_product_name">产品名称:</string>
+    <string name="information_offer_price">请在这里开价:</string>
+    <string name="information_categories">产品分类:</string>
+    <string name="information_country">产品所在国家:</string>
+    <string name="information_bidder_name">代购昵称:</string>
+    <string name="information_delivery_method">运送方式:</string>
+    <string name="information_shipping_fee">运输费:</string>
+    <string name="information_estimated_delivery">预计送达时间:</string>
+    <string name="title_address">地址:</string>
+    <string name="note_verify">（提示：通过验证后，您的账户将会公开显示已验证。如果忽略验证个人信息，您账户的可信度可能会受到影响。）</string>
+
+    <string name="title_product_description">产品描述 </string>
+    <string name="title_product_commodity">产品状态 </string>
+    <string name="title_product_country">产品所在国家 </string>
+    <string name="btn_save_invoice">确定 </string>
+
+    //My bid, post
+    <string name="txt_no_limited_country">不限国家 </string>
+    <string name="label_waiting_response">等待对方回应</string>
+    <string name="label_payment_review">货款审查中 </string>
+    <string name="label_waiting_for_delivery">等待代购发货 </string>
+    <string name="label_buyer_reject_offer">买家已拒绝出价 </string>
+    <string name="title_alert_dispute">您确定要重新发布?</string>
+    <string name="message_alert_dispute">确认您要重新发布这个广告？确认后您的广告有效期为21天。</string>
+    <string name="btn_alert_positive_dispute">重新发布</string>
+    <string name="btn_alert_negative_dispute">取消</string>
+    <string name="title_alert_delete">出价的用户们会收到广告被删除的通知。</string>
+    <string name="message_alert_delete">确认删除?</string>
+    <string name="btn_alert_negative_delete">否</string>
+    <string name="btn_alert_positive_delete">是</string>
+    <string name="title_alert_warning_delete">删除产品</string>
+    <string name="message_alert_waring_delete">不能删除 您已接受出价</string>
+    <string name="title_alert_edit">编辑产品</string>
+    <string name="message_alert_edit">不能更改 您已接受出价</string>
+    <string name="title_alert_warning_edit">编辑产品</string>
+    <string name="message_alert_warning_edit">不能更改 您已接受出价</string>
+    <string name="title_alert_confirm_receipt">您确定?</string>
+    <string name="btn_alert_negative_confirm">不对</string>
+    <string name="btn_alert_positive_confirm">对</string>
+    <string name="btn_alert_positive_feedback">不对</string>
+    <string name="message_alert_feedback">您已经发起了一次举报，请等待此次举报流程结束后再发起新的举报。</string>
+    <string name="title_alert_feedback">举报这则广告</string>
+    <string name="btn_alert_feedback">好的</string>
+    <string name="btn_order_detail">  订单  </string>
+    <string name="btn_dispute">  投诉  </string>
+    <string name="btn_chat_my_post">联络代购</string>
+    <string name="btn_confirm_receipt">确认收货</string>
+    <string name="btn_upload_invoice">  物流  </string>
+    <string name="btn_chat_my_bid">联络买家</string>
+
+    //Notification
+    <string name="offer_raised">提交了一个出价</string>
+    <string name="reoffer_raised">重新提交了一个出价</string>
+    <string name="offer_rejected">拒绝您的出价</string>
+    <string name="offer_accepted">接受了您的出价</string>
+    <string name="offer_counter">提交了一个还价</string>
+    <string name="order_confirmed">交易已完成确认</string>
+    <string name="invoice_rejected">发票未被接受</string>
+    <string name="invoice_accepted">发票已接受</string>
+    <string name="account_verify_rejected">您所提供的证件未通过审核</string>
+    <string name="account_verify_closed">恭喜您已成功上传您的身份证</string>
+    <string name="category_request">&#8226;&#160;类别</string>
+    <string name="product_name_request">&#8226;&#160;名称</string>
+    <string name="country_request">&#8226;&#160;</string>
+    <string name="description_request">&#8226;&#160;产品描述</string>
+    <string name="list_image_product_request">&#8226;&#160;产品图片</string>
+    <string name="question_answer">向您提出了一个问题</string>
+    <string name="reply_question_answer">回复了您的问题</string>
+    <string name="error_rebid">&#8226;&#160;价 (¥)</string>
+
+    //Dialog Bid
+    <string name="dialog_bid_price_product">&#8226;&#160;开价 (¥)必填</string>
+    <string name="dialog_bid_shipping_cost">&#8226;&#160;运送费必填</string>
+    <string name="dialog_bid_estimated_delivery_time">&#8226;&#160;预计送达时间必填</string>
+    <string name="dialog_bid_country">&#8226;&#160;国家必填</string>
+
+    <string name="empty_list">此页暂时没有内容 =(</string>
+    <string name="empty_list_user_reviews">此用户暂时没有收到评价</string>
+
+    <string name="forgot_password">如果您的邮箱存在于我们的数据库中，您将收到一封找回密码的邮件.</string>
+
+    //edit profile
+    <string name="edit_name">必填必填</string>
+    <string name="edit_first_name">名必填</string>
+    <string name="edit_last_name">姓必填</string>
+    <string name="edit_phone_number">联络电话必填</string>
+    <string name="edit_name_alipay">支付宝账户必填</string>
+    <string name="edit_id_alipay">支付宝账户的实名必填</string>
+
+    //request product
+    <string name="title_request_purchase_shipping_method">优先选择的物流方式</string>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- This could be your fragment container, or something -->
+    <com.wo1haitao.views.CustomLayoutMain
+        android:id="@+id/contentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+    </com.wo1haitao.views.CustomLayoutMain>
+
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<com.roughike.bottombar.BottomBar-->
+            <!--android:background="@color/colorPrimary"-->
+            <!--android:id="@+id/bottomBar"-->
+            <!--android:paddingBottom="3dp"-->
+            <!--android:layout_marginTop="-5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/bottomBar"-->
+            <!--app:bb_activeTabColor="@color/white"-->
+            <!--app:bb_inActiveTabColor="@color/white"-->
+            <!--app:bb_tabXmlResource="@xml/bottombar_tabs">-->
+        <!--</com.roughike.bottombar.BottomBar>-->
+        <com.wo1haitao.views.BottomBarProject
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.wo1haitao.views.BottomBarProject>
+    </FrameLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_header_product_detail"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.wo1haitao.controls.CustomSquareFrameLayout
+        android:id="@+id/fr_viewpaper_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_products"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:src="@drawable/background_product" />
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tv_ad_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="@drawable/boder_product_top"
+            android:paddingBottom="5dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:textSize="@dimen/textSize"
+            android:text="@string/ad_limmit"
+            android:textColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/ll_dots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+        </LinearLayout>
+    </com.wo1haitao.controls.CustomSquareFrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color_dialog"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_layout_content"
+                android:layout_gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_marginRight="5dp">
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_name_pd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="..."
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="56px"
+                    android:textStyle="bold" />
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_info_product"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text=" 求购 "
+                    android:lines="1"
+                    android:textColor="@color/white"
+                    android:textSize="42px" />
+            </LinearLayout>
+
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "84"
+                custom:fit_width = "84"
+                android:id="@+id/iv_feedback"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/flag_dispute"
+                android:visibility="gone" />
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "84"
+                custom:fit_width = "84"
+                android:id="@+id/iv_duplicate"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/duplicate" />
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "84"
+                custom:fit_width = "84"
+                android:id="@+id/iv_favories"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_gravity="right"
+                android:src="@drawable/favories_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:background="@drawable/user_circle"
+                android:gravity="center">
+
+                <FrameLayout
+                    android:id="@+id/layout_avatar"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/user_circle"
+                    android:gravity="center">
+
+                    <com.wo1haitao.controls.RoundedImageView
+                        android:id="@+id/iv_user"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/avatar" />
+
+                    <ImageView
+                        android:id="@+id/verifies_user"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="bottom|right" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_name_us"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSizeCA" />
+
+                    <ImageView
+                        android:id="@+id/id_verifies"
+                        android:layout_width="105sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitStart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <RatingBar
+                        android:id="@+id/ratingBar"
+                        style="@style/CustomRatingBar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:isIndicator="true"
+                        android:numStars="5" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_num_of_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSizeCA" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    custom:fit_height = "84"
+                    custom:fit_width = "84"
+                    android:layout_width="84px"
+                    android:layout_height="84px"
+                    android:id="@+id/group_product"
+                     />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_category"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:lines="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSizeCA" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:orientation="horizontal">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    custom:fit_height = "84"
+                    custom:fit_width = "84"
+                    android:layout_width="84px"
+                    android:layout_height="84px"
+                    android:src="@drawable/globe_icon" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_country"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="@dimen/textSizeCA" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "84"
+                custom:fit_width = "84"
+                android:layout_width="84px"
+                android:layout_height="84px"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/info_icon" />
+
+            <com.wo1haitao.controls.JustifyTextView
+                android:id="@+id/tv_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/please_repay"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                android:textSize="@dimen/textSizeCA" />
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/ship_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/textSizeCA"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/white"/>
+</LinearLayout>

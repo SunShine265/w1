@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "607327950615",
+    "firebase_url": "https://wo1haitao-dev.firebaseio.com",
+    "project_id": "wo1haitao-dev",
+    "storage_bucket": "wo1haitao-dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:607327950615:android:11424ced6ea40b93",
+        "android_client_info": {
+          "package_name": "com.wo1haitao"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "607327950615-n26bjfjabpfkj07sca2r0hntsemnvsqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqb4oNtal6EQSpR77HJMhahjj4WHZ5vBM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

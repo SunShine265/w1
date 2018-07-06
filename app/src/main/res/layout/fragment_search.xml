@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    >
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.wo1haitao.views.ActionBarProject>
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/txt_popular"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+            <org.apmem.tools.layouts.FlowLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/flListprovider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|top"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+            </org.apmem.tools.layouts.FlowLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:background="@drawable/button_drable_dark"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iconButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignLeft="@+id/textButton"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/hammer" />
+
+                    <TextView
+                        android:id="@+id/textButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="40dp"
+                        android:text="@string/txt_say_you_want"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btnTextSize" />
+                </LinearLayout>
+            </LinearLayout>
+</com.wo1haitao.views.CustomLayoutMain>
+

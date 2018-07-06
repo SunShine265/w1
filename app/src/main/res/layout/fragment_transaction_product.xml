@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/dark_grey"
+    android:layout_height="match_parent">
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.wo1haitao.views.ActionBarProject>
+
+    <ListView
+        android:id="@+id/lv_product"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</com.wo1haitao.views.CustomLayoutMain>

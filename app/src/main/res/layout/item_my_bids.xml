@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_row_bottom_border_dark"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp">
+
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/expected_arrival_days"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:textColor="@color/colorPrimary"
+        android:textSize="32px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                android:id="@+id/img_product"
+                android:layout_width="@dimen/length_image"
+                android:layout_height="@dimen/length_image"
+                app:is_scale_image_custom = "false"
+                android:layout_centerInParent="true"
+                android:scaleType="centerCrop"
+                app:fit_height="242"
+                app:fit_width="242" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_status_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:id="@+id/id_buyer_accept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/bid_state_screen"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="1dp"
+                        android:visibility="gone">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="买家已完成付款"
+                            android:textColor="@color/white"
+                            android:textSize="30px" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:id="@+id/id_order_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/delivery_warning"
+                        android:layout_marginLeft="5dp"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="1dp"
+                        android:visibility="gone">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/txt_order_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="货款审查中"
+                            android:textColor="@color/white"
+                            android:textSize="30px" />
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:id="@+id/id_delivery_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/button_pending"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="1dp"
+                        android:visibility="gone">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="代购确认发货"
+                            android:textColor="@color/white"
+                            android:textSize="30px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/id_receive_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/button_pending"
+                        android:paddingBottom="1dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="1dp"
+                        android:visibility="gone">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="买家确认收货"
+                            android:textColor="@color/white"
+                            android:textSize="30px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/name_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="Product"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="46px" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+                        </TextView>
+
+                        <LinearLayout
+                            android:id="@+id/ln_status_offer"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical|left"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/arrow_right"
+                                android:textSize="32px" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="5dp">
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:id="@+id/tv_status_offer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="货款审查中"
+                                    android:lines="1"
+                                    android:textColor="@color/white"
+                                    android:textSize="27px" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ln_status_offer_acceptt"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:gravity="center_vertical|left"
+                            android:orientation="horizontal"
+                            android:visibility="gone">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/arrow_right"
+                                android:textSize="32px" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/button_accept"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="5dp">
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:id="@+id/tv_status_offer_accept"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="货款审查中"
+                                    android:textColor="@color/white"
+                                    android:textSize="27px" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+                        </TextView>
+                        <LinearLayout
+                            android:id="@+id/ln_status_inform"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|left"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:text="@string/arrow_right"
+                                android:textSize="32px" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:background="@color/colorPrimary"
+                                android:gravity="center"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="5dp">
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:id="@+id/tv_status_inform"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="货款审查中"
+                                    android:lines="1"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/white"
+                                    android:textSize="27px" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="left|center"
+                        android:orientation="horizontal">
+
+                        <FrameLayout
+                            android:id="@+id/fr_offer_price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_yellow_product"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:id="@+id/offer_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:textColor="@color/yellow_product_detail"
+                                android:textSize="27px" />
+                        </FrameLayout>
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/arrow_counter_offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/arrow_right"
+                            android:textSize="32px"
+                            android:visibility="invisible" />
+
+                        <FrameLayout
+                            android:id="@+id/fr_counter_offer_price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_blue_product"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:visibility="invisible">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:id="@+id/counter_offer_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:textColor="@color/blue_product_detail"
+                                android:textSize="27px"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                        <TextView
+                            android:id="@+id/arrow_reoffer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/arrow_right"
+                            android:textSize="8dp"
+                            android:visibility="invisible" />
+
+                        <FrameLayout
+                            android:id="@+id/fr_reoffer_price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_yellow_product"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:visibility="invisible">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:id="@+id/reoffer_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginRight="4dp"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:lines="1"
+                                android:textColor="@color/yellow_product_detail"
+                                android:textSize="27px"
+                                android:visibility="invisible" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_status_reoffer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/arrow_right"
+                        android:textSize="32px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/tv_status_reoffer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="货款审查中"
+                            android:textColor="@color/white"
+                            android:textSize="27px" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ln_status_reoffer_acceptt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/arrow_right"
+                        android:textSize="32px" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/button_accept"
+                        android:gravity="center"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/tv_status_reoffer_accept"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="货款审查中"
+                            android:textColor="@color/white"
+                            android:textSize="27px" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+        <com.wo1haitao.controls.CustomImageViewFitSize
+
+            android:layout_width="@dimen/length_image"
+            android:layout_height="10dp"
+            app:is_scale_image_custom = "false"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            app:fit_height="30"
+            app:fit_width="242" />
+        <LinearLayout
+            android:layout_marginLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+
+            <LinearLayout
+                android:id="@+id/iv_detail_order"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_border_radius"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="   订单   "
+                    android:textColor="@color/black"
+                    android:textSize="36px" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iv_invoice"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_border_radius"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="物流"
+                    android:textColor="@color/black"
+                    android:textSize="36px"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/iv_dispute"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_border_radius"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="投诉"
+                    android:textColor="@color/black"
+                    android:textSize="36px" />
+
+
+            </LinearLayout>
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/id_chat"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:lines="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/button_border_radius"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="5dp"
+                android:text="@string/btn_chat_my_bid"
+                android:textColor="@color/black"
+                android:textSize="36px" />
+            <View
+                android:id="@+id/view_empty_1"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <View
+                android:id="@+id/view_empty_2"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+            <View
+                android:id="@+id/view_empty_3"
+                android:layout_marginRight="5dp"
+                android:layout_width="0dp"
+                android:visibility="gone"
+                android:layout_height="match_parent"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+

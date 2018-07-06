@@ -1,0 +1,48 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_xs_margin">6dp</dimen>
+    <dimen name="activity_vertical_xs_margin">8dp</dimen>
+
+    <dimen name="activity_horizontal_lg_margin">32dp</dimen>
+    <dimen name="activity_vertical_lg_margin">32dp</dimen>
+
+    <dimen name="text_size_price_counter_offer">20dp</dimen>
+    <dimen name="textSize">48px</dimen>
+    <dimen name="text_size_title_detail_order">22dp</dimen>
+    <dimen name="textSizeCA">50px</dimen>
+    <dimen name="textSizeDP">18dp</dimen>
+    <dimen name="textSizeCADP">16dp</dimen>
+    <dimen name="textSizeCB">15dp</dimen>
+    <dimen name="textSizeDD">14dp</dimen>
+    <dimen name="pading_CB">40dp</dimen>
+    <dimen name="textSizeBig">24dp</dimen>
+    <dimen name="btnTextSize">20dp</dimen>
+    <dimen name="btnHeight">72dp</dimen>
+    <dimen name="textSizeLarge">40dp</dimen>
+    <dimen name="actionBar">50dp</dimen>
+    <dimen name="actionBarLogo">60dp</dimen>
+    <dimen name="padding_chat_detail">5dp</dimen>
+
+    <dimen name="bottomBar">60dp</dimen>
+    <dimen name="marginBottomBar">70dp</dimen>
+    <dimen name="padding_detail_order">5dp</dimen>
+    <dimen name="padding_top_between_title_order_detail">30dp</dimen>
+    <dimen name="padding_top_between_detail">30dp</dimen>
+
+    <dimen name="padding_request_purchase">10dp</dimen>
+
+    <dimen name="length_image">224px</dimen>
+
+    <dimen name="textSizeProductList">44px</dimen>
+
+    <dimen name="iconSizeProductCreate">40px</dimen>
+
+    <dimen name="textSizeHeader">60px</dimen>
+
+    <dimen name="btnTextSizePx">64px</dimen>
+    <dimen name="btnHeightPx">232px</dimen>
+
+</resources>

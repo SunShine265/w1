@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.wo1haitao.views.ActionBarProject>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/activity_horizontal_xs_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_xs_margin">
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/tv_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/verify_text_top"
+                android:textColor="@color/time_chat"
+                android:textSize="@dimen/textSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                >
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </View>
+
+                <ImageView
+                    android:id="@+id/iv_ID"
+                    android:layout_width="0dp"
+                    android:layout_weight="6"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/upload_id_here" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                </View>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <com.wo1haitao.controls.CustomButtonFixSize
+                    android:id="@+id/btn_to_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeightPx"
+                    android:layout_marginTop="70dp"
+                    android:background="@drawable/button_drable_dark"
+                    android:text="@string/bt_setup_account_verify"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/btnTextSizePx"
+                    android:enabled="false"/>
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/btn_skip_verify"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="@string/bt_skip_verify"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="836">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="13"/>
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="0dp"
+                        android:layout_weight="808"
+                        android:layout_height="wrap_content"
+                        android:text="@string/note_verify"
+                        android:textColor="@color/time_chat"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:paddingBottom="10dp"
+                        android:textSize="42px" />
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="15"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</com.wo1haitao.views.CustomLayoutMain>

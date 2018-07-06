@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_focused="true"  android:drawable="@drawable/toggle_on_base" />
+        <item android:drawable="@drawable/toggle_off_track" />
+    </selector>
+</selector>

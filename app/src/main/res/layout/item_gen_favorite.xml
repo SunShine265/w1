@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border_dark"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="5dp">
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/expected_arrival_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    custom:fit_height = "224"
+                    custom:fit_width = "224"
+                    android:id="@+id/iv_product"
+                    android:layout_width="@dimen/length_image"
+                    android:layout_height="@dimen/length_image"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="0dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_name_product"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="Product"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="44px" />
+
+                    <LinearLayout
+                        android:id="@+id/ln_bid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:background="@color/red"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="2dp"
+                        android:visibility="gone">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/bid"
+                            android:textSize="40px"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="0dp"-->
+                    <!--android:layout_weight="1" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/category"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:ems="10"
+                            android:lines="1"
+                            android:textColor="@color/black"
+                            android:textSize="44px" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_top_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:orientation="horizontal">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:id="@+id/country"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:textColor="@color/black"
+                                android:textSize="44px" />
+                        </LinearLayout>
+
+                        <com.wo1haitao.controls.CustomImageViewFitSize
+                            custom:fit_height = "64"
+                            custom:fit_width = "64"
+                            android:id="@+id/iv_duplicate"
+                            android:layout_width="64px"
+                            android:layout_height="64px"
+                            android:layout_alignTop="@+id/ivSearch"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="7.5dp"
+                            android:layout_toLeftOf="@+id/ivSearch"
+                            android:layout_toStartOf="@+id/ivSearch"
+                            android:src="@drawable/duplicate" />
+
+                        <com.wo1haitao.controls.CustomImageViewFitSize
+                            custom:fit_height = "64"
+                            custom:fit_width = "64"
+                            android:id="@+id/iv_favories"
+                            android:layout_width="64px"
+                            android:layout_height="64px"
+                            android:layout_alignTop="@+id/ivSearch"
+                            android:layout_gravity="right"
+                            android:layout_toLeftOf="@+id/ivSearch"
+                            android:layout_toStartOf="@+id/ivSearch"
+                            android:src="@drawable/ic_fav_yes" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

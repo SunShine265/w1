@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey_black"
+        android:padding="10dp">
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/title_dialog_evaluation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnTextSizePx" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/back_bt_arrow" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dark_grey"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="20dp">
+
+            <LinearLayout
+                android:id="@+id/ln_rating_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:text="@string/title_rating_description_product_review"
+                    android:textColor="@color/time_chat"
+                    android:textSize="@dimen/textSize" />
+                <com.wo1haitao.controls.CustomRatingBar
+                    android:id="@+id/ratingBar3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.wo1haitao.controls.CustomRatingBar>
+                <!--<RatingBar-->
+                    <!--android:id="@+id/ratingBar3"-->
+                    <!--style="@style/CustomRatingBarSelect"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:isIndicator="false"-->
+                    <!--android:numStars="5"-->
+                    <!--android:stepSize="1" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_rating_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="6"
+                    android:text="@string/title_rating_transport_review"
+                    android:textColor="@color/time_chat"
+                    android:textSize="@dimen/textSize" />
+
+                <com.wo1haitao.controls.CustomRatingBar
+                    android:id="@+id/ratingBar2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.wo1haitao.controls.CustomRatingBar>
+                <!--<RatingBar-->
+                    <!--android:id="@+id/ratingBar2"-->
+                    <!--style="@style/CustomRatingBarSelect"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:isIndicator="false"-->
+                    <!--android:numStars="5"-->
+                    <!--android:stepSize="1" />-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_rating_bar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="6"
+                    android:text="@string/title_rating_communication_review"
+                    android:textColor="@color/time_chat"
+                    android:textSize="@dimen/textSize" />
+
+                <com.wo1haitao.controls.CustomRatingBar
+                    android:id="@+id/ratingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                </com.wo1haitao.controls.CustomRatingBar>
+                <!--<RatingBar-->
+                    <!--android:id="@+id/ratingBar"-->
+                    <!--style="@style/CustomRatingBarSelect"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:isIndicator="false"-->
+                    <!--android:numStars="5"-->
+                    <!--android:stepSize="1" />-->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.wo1haitao.controls.CustomEditextSoftkey
+                android:id="@+id/id_review_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_layout_no_border"
+                android:gravity="top|left"
+                android:hint="@string/review_message_hint_text"
+                android:inputType="textMultiLine"
+                android:lines="6"
+                android:maxLines="8"
+                android:minLines="4"
+                android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                android:scrollbars="vertical"
+                android:textColorHint="@color/dialog_text_hint"
+                android:textSize="@dimen/textSize" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_to_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnHeight"
+            android:background="@drawable/button_drable_dark"
+            android:text="@string/btn_save_Eva"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnTextSize" />
+
+    </LinearLayout>
+</LinearLayout>
+
+

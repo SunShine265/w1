@@ -1,0 +1,1222 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:orientation="vertical"
+    tools:context="com.wo1haitao.activities.MainActivity"
+    android:baselineAligned="false">
+
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.wo1haitao.views.ActionBarProject>
+
+    <ScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.wo1haitao.activities.MainActivity">
+
+        <!--Order-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/confirm_order"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_detail_order" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_name_product"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="Name Product"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:id="@+id/ll_charge_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_commission_charges_percent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="                                                                                                                                                                                                                                                                                                                                            @string/commission_charges_percent"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_service_charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/delivery_fee"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_shipping_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:id="@+id/ln_discount_offer_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/bt_discount"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_discount_offer_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="- ¥ 50.00"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/sum_money"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/id_total_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:id="@+id/ll_charge_fee_seller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_charge_fee_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/sum_money"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="52px" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_price_charge_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:id="@+id/ll_total_seller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="代购实际到账金额"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="52px" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_total_amount_seller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="52px" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/padding_top_between_title_order_detail">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:text="@string/type_payment"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_detail_order" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/tv_method_tranfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="@dimen/padding_detail_order"
+                            android:text="@string/title_pay_method"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/textView5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="@string/content_bank_transfer"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_alipay_detail_order" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+            <!--Transaction Detail-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/padding_top_between_detail">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/transaction_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_detail_order" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_detail_order"
+                    android:paddingTop="@dimen/padding_detail_order">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_rnd" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/title_trade_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_trade_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_detail_order"
+                    android:paddingTop="@dimen/padding_detail_order">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_rnd" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/date_of_transaction"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_date_of_transaction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_detail_order"
+                    android:paddingTop="@dimen/padding_detail_order"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_rnd" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/pay_method"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_payment_method"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_detail_order"
+                    android:paddingTop="@dimen/padding_detail_order"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/profile_rnd" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/total_mount"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_total_mount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Payment Detail-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/padding_top_between_detail"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/payment_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_detail_order" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_detail_order"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="@dimen/padding_detail_order">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/bank_account_number"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_bank_account_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/bank_account_information"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_bank_account_information"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:maxLines="1"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Product Informantion-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/padding_top_between_detail">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/title_product_information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_detail_order" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_horizontal_margin"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="@dimen/activity_horizontal_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/imv_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/hinh_demo" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_title_product_information"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="产品讯息"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_product_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/name_product"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/textView7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_offer_price"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/offer_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_product_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/name_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_country"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/name_country"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_bidder_name"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/bidder_name"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/custom_title_product_information"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/title_product_information"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="运送方式详情"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_delivery_method"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/delivery_method"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_shipping_fee"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/shipping_fee"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/information_estimated_delivery"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/estimated_delivery"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Product Informantion-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingTop="@dimen/padding_top_between_detail">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_rnd" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@android:color/transparent"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:text="@string/title_address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_title_detail_order" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@color/dark_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:background="@color/dark_grey"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/padding_detail_order"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="@dimen/padding_detail_order">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_title_product_information"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收货地址"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_shipping_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/dark_grey"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:visibility="gone"
+                    android:paddingTop="@dimen/padding_detail_order">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/custom_title_product_information"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingTop="5dp">
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="账单地址"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_billing_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/time_chat"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.wo1haitao.views.CustomLayoutMain>

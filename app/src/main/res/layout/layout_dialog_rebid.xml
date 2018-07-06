@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/sv_product"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/profile_menu"
+                    android:gravity="center"
+                    android:minEms="10"
+                    android:minHeight="@dimen/textSizeLarge"
+                    android:padding="15dp"
+                    android:text="@string/title_shop_bid"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_color_dialog"
+                    android:gravity="center"
+                    android:minHeight="@dimen/textSize"
+                    android:padding="5dp"
+                    android:text="@string/title_offer_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tvPriceInfo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:ems="4"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tvCondition"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:text="¥ 250.00"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tvCountry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:ems="4"
+                        android:gravity="center"
+                        android:lines="1"
+                        android:text="¥ 250.00"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/dark_color_dialog"
+                    android:gravity="center"
+                    android:minHeight="@dimen/textSize"
+                    android:padding="5dp"
+                    android:text="@string/title_reoffer_detail"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textSize" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tvCounterPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:lines="1"
+                        android:text="@string/title_price_offer"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/remark_counter_offer"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="30dp"
+                        android:text="2"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/profile_menu"
+                android:gravity="center"
+                android:minHeight="@dimen/textSize"
+                android:padding="10dp"
+                android:text="请您重新出价"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textSize" />
+            <FrameLayout
+                android:id="@+id/fl_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize" />
+            </FrameLayout>
+            <LinearLayout
+                android:background="@color/background_color_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tvLabelPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2"
+                    android:lines="1"
+                    android:text="@string/title_price_offer"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/textSize" />
+
+                <com.wo1haitao.controls.CustomEditextSoftkey
+                    android:id="@+id/edt_re_offer_price"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/custom_layout_border_bg_white"
+                    android:hint="@string/hint_offer_price"
+                    android:imeOptions="actionDone"
+                    android:inputType="numberDecimal"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColorHint="@color/dialog_text_hint"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/list_Shipmethod"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_color_dialog"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_advise_shipping"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/add_offer_method"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/plus_icon" />
+                </LinearLayout>
+
+                <!--line 1 add shippng-->
+                <LinearLayout
+                    android:id="@+id/lineShipping1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+
+                        <com.wo1haitao.controls.CustomEditextSoftkey
+                            android:id="@+id/edt_method_shipping1"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:focusableInTouchMode="false"
+                            android:hint="新加坡"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                            android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="50px" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:visibility="gone"
+                            android:id="@+id/sp_method_shipping"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_method_shipping"
+                            android:lines="1"
+                            android:paddingRight="10dp"
+                            android:spinnerMode="dialog"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="44px" />
+                    </LinearLayout>
+
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/edt_shipping_cost"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:hint="@string/hint_shipping_cost"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColorHint="@color/dialog_text_hint"
+                        android:textSize="@dimen/textSize" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.wo1haitao.controls.CustomEditextSoftkey
+                            android:id="@+id/edt_expected_arrival_days"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/custom_layout_border_bg_white"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_shipping_expected_arrival_day"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="@dimen/textSize" />
+                        <Button
+                            android:id="@+id/remove_offer_method_1"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="right|center"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/minus_icon"
+                            android:visibility="invisible" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+                <!--line 2 add shippng-->
+                <LinearLayout
+                    android:id="@+id/lineShipping2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+                        <com.wo1haitao.controls.CustomEditextSoftkey
+                            android:id="@+id/edt_method_shipping2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:focusableInTouchMode="false"
+                            android:hint="新加坡"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                            android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="50px" />
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:visibility="gone"
+                            android:id="@+id/sp_method_shipping_2"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_method_shipping"
+                            android:lines="1"
+                            android:paddingRight="10dp"
+                            android:spinnerMode="dialog"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="44px" />
+                    </LinearLayout>
+
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/edt_shipping_cost2"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:hint="@string/hint_shipping_cost"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColorHint="@color/dialog_text_hint"
+                        android:textSize="@dimen/textSize" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.wo1haitao.controls.CustomEditextSoftkey
+                            android:id="@+id/edt_expected_arrival_days_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/custom_layout_border_bg_white"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_shipping_expected_arrival_day"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="@dimen/textSize" />
+                        <Button
+                            android:id="@+id/remove_offer_method_2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="right|center"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/minus_icon"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+                <!--line 3 add shippng-->
+                <LinearLayout
+                    android:id="@+id/lineShipping3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:orientation="horizontal"
+                        android:paddingLeft="5dp">
+
+                        <com.wo1haitao.controls.CustomEditextSoftkey
+                            android:id="@+id/edt_method_shipping3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:background="@android:color/transparent"
+                            android:ellipsize="end"
+                            android:focusableInTouchMode="false"
+                            android:hint="新加坡"
+                            android:inputType="text"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                            android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="50px" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:visibility="gone"
+                            android:id="@+id/sp_method_shipping_3"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_method_shipping"
+                            android:lines="1"
+                            android:paddingRight="10dp"
+                            android:spinnerMode="dialog"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="44px" />
+                    </LinearLayout>
+
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/edt_shipping_cost3"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1.5"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:hint="@string/hint_shipping_cost"
+                        android:imeOptions="actionDone"
+                        android:inputType="numberDecimal"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColorHint="@color/dialog_text_hint"
+                        android:textSize="@dimen/textSize" />
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                        <com.wo1haitao.controls.CustomEditextSoftkey
+                            android:id="@+id/edt_expected_arrival_days_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="5dp"
+                            android:background="@drawable/custom_layout_border_bg_white"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint="@string/hint_shipping_expected_arrival_day"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:paddingLeft="5dp"
+                            android:textColorHint="@color/dialog_text_hint"
+                            android:textSize="@dimen/textSize" />
+                        <Button
+                            android:id="@+id/remove_offer_method_3"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_gravity="right|center"
+                            android:layout_marginLeft="3dp"
+                            android:background="@drawable/minus_icon"
+                            android:visibility="visible" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_remarks_offer"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/edt_remarks"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/custom_layout_border_bg_white"
+                        android:hint="@string/hint_remarks_offer"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textColorHint="@color/dialog_text_hint"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_list_image_products"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/textSize" />
+
+                </LinearLayout>
+
+                <com.wo1haitao.views.CustomViewListImage
+                    android:id="@+id/ll_list_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                </com.wo1haitao.views.CustomViewListImage>
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:background="@color/background_color_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/bt_save_offer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_drable_profile_menu"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="@dimen/textSizeLarge"
+            android:padding="15dp"
+            android:text="最后报价"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSizeDP" />
+    </LinearLayout>
+</LinearLayout>

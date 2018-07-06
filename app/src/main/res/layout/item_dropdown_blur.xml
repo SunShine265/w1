@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:clipChildren="true"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+    <FrameLayout
+        android:id="@+id/fr_content_view"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true">
+        <FrameLayout
+            android:id="@+id/fr_background"
+            android:background="@drawable/button_drable_item_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></FrameLayout>
+        <FrameLayout
+            android:background="@drawable/custom_row_bottom_border_item_dropdown"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="true"></FrameLayout>
+        <LinearLayout
+            android:background="@color/transparent"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@color/transparent"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:textColor="@color/time_chat"
+                android:text="ACB"
+                android:textSize="40px"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

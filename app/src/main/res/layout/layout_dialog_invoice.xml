@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/profile_menu">
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/iv_back_action"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/back_bt_arrow"
+                    android:tint="@color/white" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tvTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:minEms="10"
+                    android:minHeight="@dimen/textSizeLarge"
+                    android:text="物流信息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize" />
+
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/ll_form_content"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:id="@+id/fl_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:visibility="gone">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorPrimary"
+                        android:padding="5dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/textSize" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="交易编号: "
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_transaction_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/title_invoice_status"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSize" />
+
+                    <ImageView
+                        android:id="@+id/iv_invoice_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitStart" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:text="追踪号码"-->
+                    <!--android:textSize="@dimen/textSize"-->
+                    <!--android:layout_marginLeft="20dp"/>-->
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/ed_tracking_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:hint="快递单号"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:scrollbars="vertical"
+                        android:textColorHint="@color/dark_color_dialog"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+                    <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:text="船公司名称"-->
+                    <!--android:textSize="@dimen/textSize"-->
+                    <!--android:layout_marginLeft="20dp"/>-->
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/name_shipping_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/white"
+                        android:gravity="left|center_vertical"
+                        android:hint="物流公司"
+                        android:inputType="text"
+                        android:padding="5dp"
+                        android:scrollbars="vertical"
+                        android:textColorHint="@color/dark_color_dialog"
+                        android:textSize="@dimen/textSize" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:id="@+id/fr_invoice_upload1"
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_picture_invoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter">
+                        </ImageView>
+
+                        <ImageView
+                            android:id="@+id/iv_delete_invoice1"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="right"
+                            android:padding="3dp"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:id="@+id/fr_invoice_upload2"
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/img_picture_invoice_update"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:scaleType="fitCenter">
+                        </ImageView>
+                        <ImageView
+                            android:id="@+id/iv_delete_invoice2"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="right"
+                            android:padding="3dp"
+                            android:src="@android:drawable/ic_menu_close_clear_cancel"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <ImageView
+                        android:id="@+id/bt_upload_picture_invoice"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/upload_image_invoice"
+                        android:scaleType="fitCenter" />
+                </LinearLayout>
+            </LinearLayout>
+            <FrameLayout
+                android:id="@+id/fl_message_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                android:visibility="gone">
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textSize"
+                    android:textColor="@color/colorPrimary"
+                    android:text="感谢您上传发票至我要海淘网，此发票将作为证明产品来源用途仅为我要海淘网保存，买家将无法查看。"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/ln_post_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_post_invoice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_drable_profile_menu"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:minHeight="@dimen/textSizeLarge"
+                    android:padding="10dp"
+                    android:text="上传物流信息"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

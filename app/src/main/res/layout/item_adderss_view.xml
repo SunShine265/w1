@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_adress_info"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/custom_row_bottom_border"
+    android:orientation="horizontal"
+
+    android:paddingLeft="@dimen/activity_horizontal_margin">
+
+    <View
+        android:layout_width="20dp"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_weight="5">
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tv_adress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:lines="5"
+            android:textSize="@dimen/textSize"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:text="Bik 520, \nSingapore, Singapore \nSingapore \nPostalCode 730520"
+            android:textColor="@color/dialog_text_hint" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <FrameLayout
+            android:id="@+id/fl_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"
+            android:padding="10dp">
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:text="@string/form_address_default"
+                android:textSize="@dimen/textSize"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl_setdefault"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/grey_black"
+            android:padding="10dp"
+            android:visibility="gone">
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:lines="1"
+                android:textSize="@dimen/textSize"
+                android:text="@string/form_set_address_default"
+                android:textColor="@color/white" />
+        </FrameLayout>
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:id="@+id/iv_add"
+
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/plus_icon"
+            android:visibility="visible" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border_dark"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "224"
+                custom:fit_width = "224"
+                android:id="@+id/img_product"
+                android:layout_width="@dimen/length_image"
+                android:layout_height="@dimen/length_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hinh_demo" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Myphone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="44px" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:lines="1"
+                    android:textColor="@color/black"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/black"
+                    android:textSize="44px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ratingBar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tvRating3"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:lines="1"
+                    android:text="@string/title_rating_description_product_review"
+                    android:textColor="@color/time_chat"
+                    android:textSize="46px" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar3"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ratingBar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tvRating2"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="6"
+                    android:text="@string/title_rating_transport_review"
+                    android:textColor="@color/time_chat"
+                    android:textSize="44px" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar2"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_ratingBar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tvRating1"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:text="@string/title_rating_communication_review"
+                    android:textColor="@color/time_chat"
+                    android:textSize="44px" />
+
+                <RatingBar
+                    android:id="@+id/ratingBar1"
+                    style="@style/CustomRatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:isIndicator="true"
+                    android:numStars="5" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="user给你的评价"
+                android:textColor="@color/black"
+                android:textSize="46px"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:lines="1"
+                android:text="Good"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textSizeDD"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

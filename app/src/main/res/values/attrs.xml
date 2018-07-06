@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="com.wo1haitao.controls.CustomSizeImage">
+        <attr name="fit_height" format="integer" />
+        <attr name="fit_width" format="integer" />
+        <attr name="is_scale_image_custom" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="com.wo1haitao.controls.CustomSizeText">
+        <attr name="size_text" format="integer" />
+        <attr name="is_scale_text_custom" format="boolean" />
+    </declare-styleable>
+</resources>

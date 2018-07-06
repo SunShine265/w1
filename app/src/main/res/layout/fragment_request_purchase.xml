@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/id_header_purchase"
+        layout="@layout/actionbar_custom_logo_title_reqest_purchase" />
+
+    <ScrollView
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/fl_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/tv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:padding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/fr_product_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/view_product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_row_bottom_border_request_purchase"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin">
+
+                    <com.wo1haitao.controls.CustomImageViewFitSize
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_edit"
+                        custom:fit_height="70"
+                        custom:fit_width="70" />
+
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/et_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:hint="@string/form_product_name"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:textSize="53px" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/view_choose_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_bottom_border"
+                android:orientation="horizontal"
+                android:paddingBottom="15dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="15dp">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_all_product"
+                    custom:fit_height="70"
+                    custom:fit_width="70" />
+
+                <com.wo1haitao.controls.CustomEditextSoftkey
+                    android:id="@+id/edt_choose_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="产品分类"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:focusableInTouchMode="false"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                    android:textSize="53px" />
+
+                <Spinner
+                    android:visibility="gone"
+                    android:id="@+id/sp_choose_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="5dp"
+                    android:spinnerMode="dialog" />
+
+            </LinearLayout>
+
+            <!--product description -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_request_purchase"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+
+                android:paddingTop="@dimen/padding_request_purchase">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/product_description"
+                    custom:fit_height="70"
+                    custom:fit_width="70" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/title_product_description"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="53px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    custom:fit_height="70"
+                    android:visibility="invisible"
+                    custom:fit_width="70" />
+                <com.wo1haitao.controls.CustomEditextFixSize
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/custom_layout_border"
+                    android:gravity="top|left"
+                    android:hint="@string/form_product_leave_message"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:maxLines="8"
+                    android:minLines="4"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="5dp"
+                    android:scrollbars="vertical"
+                    android:textColorHint="@color/dialog_text_hint"
+                    android:textSize="53px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_request_purchase"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/padding_request_purchase"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    android:id="@+id/imageView3"
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/comodity_product"
+                    custom:fit_height="70"
+                    custom:fit_width="70" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/title_product_commodity"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="@dimen/textSizeCA"
+                    custom:size_text="16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:id="@+id/et_current_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/form_new"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="@dimen/textSizeCA" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></View>
+
+                <Switch
+                    android:id="@+id/sw_new"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_switch_tract"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn=""
+                    android:thumb="@color/transparent"
+                    android:track="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/form_used"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="@dimen/textSizeCA" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></View>
+
+                <Switch
+                    android:id="@+id/sw_sch"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_switch_tract"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn=""
+                    android:thumb="@color/transparent"
+                    android:track="@color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_request_purchase"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="10dp"
+                android:visibility="gone">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:layout_gravity="center"
+                    android:src="@drawable/delivery_icon"
+                    custom:fit_height="70"
+                    custom:fit_width="70" />
+
+                <LinearLayout
+                    android:id="@+id/view_ship_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/custom_layout_border"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp">
+
+                    <com.wo1haitao.controls.MultiSpinner
+                        android:id="@+id/mp_ship_type"
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"></com.wo1haitao.controls.MultiSpinner>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Country product-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@drawable/custom_row_no_border"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:paddingBottom="@dimen/padding_request_purchase"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+            <!--android:paddingTop="@dimen/padding_request_purchase">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="20dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/country_product" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentLeft="true"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@android:color/transparent"-->
+            <!--android:ems="10"-->
+            <!--android:hint="@string/title_product_country"-->
+            <!--android:imeOptions="actionDone"-->
+            <!--android:inputType="text"-->
+            <!--android:lines="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:paddingLeft="@dimen/activity_horizontal_xs_margin"-->
+            <!--android:textColorHint="@color/grey_text"-->
+            <!--android:textSize="@dimen/textSizeCA" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:id="@+id/ll_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/padding_request_purchase"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/padding_request_purchase">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    android:layout_width="70px"
+                    android:layout_height="70px"
+                    android:src="@drawable/country_product"
+                    custom:fit_height="70"
+                    custom:fit_width="70" />
+
+                <LinearLayout
+                    android:id="@+id/view_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/custom_layout_border"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="5dp">
+                    <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/edt_choose_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:hint="产品所在国家"
+                        android:inputType="text"
+                        android:lines="1"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:focusableInTouchMode="false"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:paddingRight="@dimen/activity_horizontal_xs_margin"
+                        android:textSize="53px" />
+
+                    <com.wo1haitao.controls.MultiSpinner
+                        android:visibility="gone"
+                        android:id="@+id/mp_country"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fadeScrollbars="false"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true"
+                        android:scrollbarAlwaysDrawVerticalTrack="true"
+                        android:scrollbarFadeDuration="0"
+                        android:scrollbars="vertical">
+                    </com.wo1haitao.controls.MultiSpinner>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_row_no_border"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center" />
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+
+                    android:background="@android:color/transparent"
+                    android:hint="@string/form_any_country"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                    android:textColorHint="@color/grey_text"
+                    android:textSize="@dimen/textSizeCA" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"></View>
+
+                <Switch
+                    android:id="@+id/sw_isfull_country"
+                    android:layout_width="55dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/btn_switch_tract"
+                    android:checked="false"
+                    android:gravity="center"
+                    android:textOff=""
+                    android:textOn=""
+                    android:thumb="@color/transparent"
+                    android:track="@color/transparent" />
+            </LinearLayout>
+
+            <com.wo1haitao.views.CustomViewListImage
+                android:id="@+id/ll_content_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"></com.wo1haitao.views.CustomViewListImage>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/id_header_purchase"
+        layout="@layout/actionbar_custom_logo_title_reqest_purchase" />
+
+    <!--<include-->
+    <!--android:id="@+id/id_header_purchase"-->
+    <!--layout="@layout/actionbar_custom_logo_title_reqest_purchase" />-->
+
+</com.wo1haitao.views.CustomLayoutMain>
+

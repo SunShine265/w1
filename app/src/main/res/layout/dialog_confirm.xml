@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color_dialog"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/profile_menu">
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minEms="10"
+            android:minHeight="@dimen/textSizeLarge"
+            android:lineSpacingExtra="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+    </FrameLayout>
+    <com.wo1haitao.controls.CustomTextViewFixSize
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:textSize="@dimen/textSize"
+        android:visibility="gone"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/dark_color_dialog"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tv_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/btn_alert_negative_delete"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textSize" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/dark_color_dialog"/>
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/btn_alert_positive_delete"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+</LinearLayout>

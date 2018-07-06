@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ln_check_fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="8dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tv_check_fill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+
+            android:textSize="@dimen/textSize"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_country_product" />
+
+        <!--<Spinner-->
+            <!--android:id="@+id/sp_choose"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1" />-->
+        <Spinner
+            android:visibility="gone"
+            android:id="@+id/sp_choose_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:spinnerMode="dialog"
+            android:textColor="@color/dialog_text_hint"/>
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/edt_choose_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="国家"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:focusableInTouchMode="false"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:textColorHint="@color/dialog_text_hint"
+            android:textSize="50px" />
+        <!--<com.wo1haitao.controls.MultiSpinner-->
+            <!--android:id="@+id/mp_country"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textColorHint="@color/grey_text">-->
+        <!--</com.wo1haitao.controls.MultiSpinner>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="center"
+            android:src="@drawable/location_icon" />
+
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/et_form_location_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/form_location_address"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:textColorHint="@color/dialog_text_hint"
+            android:textSize="@dimen/textSizeCA" />
+    </LinearLayout>
+
+    <!--current password edittext-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px" />
+
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/et_form_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/form_province"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:textColorHint="@color/dialog_text_hint"
+            android:textSize="@dimen/textSizeCA" />
+
+
+    </LinearLayout>
+
+    <!--new password edittext-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="center" />
+
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/et_form_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/form_city"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:textColorHint="@color/dialog_text_hint"
+            android:textSize="@dimen/textSizeCA" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="center" />
+
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/et_form_post_office_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/form_post_office_no"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:digits="0,1,2,3,4,5,6,7,8,9"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:textColorHint="@color/dialog_text_hint"
+            android:textSize="@dimen/textSizeCA" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <com.wo1haitao.controls.CustomImageViewFitSize
+            custom:fit_height = "70"
+            custom:fit_width = "70"
+            android:layout_width="70px"
+            android:layout_height="70px"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center|left">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/textView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_weight="1"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:text="@string/form_ship_address"
+                        android:textColor="@color/dialog_text_hint"
+                        android:textSize="@dimen/textSizeCA" />
+                </FrameLayout>
+
+                <com.wo1haitao.controls.CustomSwitch
+                    android:id="@+id/customSwitch"
+                    android:layout_width="75dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="right"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.3" />
+
+
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:id="@+id/fl_add_adr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:background="@drawable/button_drable_profile_menu"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/form_iput_new_address"
+                        android:textColor="@color/white" />
+                </FrameLayout>
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/dark_grey"
+        android:layout_weight="1">
+        <Button
+
+            android:id="@+id/bt_to_commit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/btnHeight"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/button_drable_dark"
+            android:text="@string/save_address"
+            android:textColor="@color/white"
+            android:textSize="@dimen/btnTextSize" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_row_bottom_border"
+        android:paddingBottom="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_horizontal_margin">
+
+        <View
+            android:id="@+id/viewLeft"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true" />
+
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/edt_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toRightOf="@+id/viewLeft"
+            android:background="@android:color/transparent"
+            android:ems="14"
+            android:hint="@string/form_product_country_merchandise"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:lines="1"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+            android:textColor="@drawable/textview_drable_country"
+            android:textColorHint="@color/grey_text"
+            android:textSize="@dimen/textSize" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/favories_icon"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/imageView_false"
+            android:layout_width="20sp"
+            android:layout_height="20sp"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/verified"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

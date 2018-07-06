@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_layout_reply_comment"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical">
+
+                <FrameLayout
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/user_circle"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <com.wo1haitao.controls.RoundedImageView
+                        android:id="@+id/ln_profile"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/photo" />
+
+                    <ImageView
+                        android:id="@+id/verifies_user_reply"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="bottom|right" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_marginRight="5dp"
+                            android:src="@drawable/cock_icon" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/dateCreate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="20/10/2017 16:30"
+                            android:textSize="@dimen/textSize"
+                            android:textColor="@color/grey_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:id="@+id/id_name_reply"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:lines="1"
+                                android:text="YourName1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize" />
+
+                            <ImageView
+                                android:id="@+id/id_verifies_reply"
+                                android:layout_width="105sp"
+                                android:layout_height="20sp"
+                                android:layout_gravity="right"
+                                android:layout_marginLeft="5dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:isIndicator="true"
+                            android:numStars="5"/>
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:id="@+id/reply_num_review"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:lines="1"
+                            android:text="@string/product_review"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp">
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:id="@+id/id_reply_comment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/textSize"
+                android:text="您可能感兴趣的其它运动用品产品" />
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                custom:fit_height = "92"
+                custom:fit_width = "64"
+                android:id="@+id/id_image_reply"
+                android:layout_width="64px"
+                android:layout_height="92px"
+                android:layout_gravity="bottom"
+                android:src="@drawable/reply_icon"
+                android:visibility="gone" />
+            <!--<LinearLayout-->
+                <!--android:id="@+id/ln_reply"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:paddingLeft="5dp"-->
+                <!--android:paddingRight="5dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_horizontal"-->
+                <!--android:orientation="vertical"-->
+                <!--android:visibility="gone">-->
+
+                <!--<ImageView-->
+                    <!--android:layout_width="20dp"-->
+                    <!--android:layout_height="25dp"-->
+                    <!--android:layout_gravity="bottom"-->
+                    <!--android:src="@drawable/reply_icon" />-->
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="回复"-->
+                    <!--android:textSize="@dimen/textSizeCA"-->
+                    <!--android:textColor="@color/black"/>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_grey"
+    android:orientation="vertical">
+
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.wo1haitao.views.ActionBarProject>
+
+    <LinearLayout
+        android:id="@+id/content_detail_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/header_chat_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    custom:fit_height = "224"
+                    custom:fit_width = "224"
+                    android:id="@+id/iv_product"
+                    android:layout_width="@dimen/length_image"
+                    android:layout_height="@dimen/length_image"
+                    android:scaleType="centerCrop" />
+                <!--<ImageView-->
+                    <!--android:id="@+id/iv_product"-->
+                    <!--android:layout_width="@dimen/length_image"-->
+                    <!--android:layout_height="@dimen/length_image"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:src="@drawable/hinh_demo" />-->
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_name_product"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center|left"
+                        android:lines="1"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSizeCB" />
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/verifies_user"-->
+                        <!--android:layout_width="100sp"-->
+                        <!--android:layout_height="22sp"-->
+                        <!--android:layout_marginLeft="5dp" />-->
+
+                </LinearLayout>
+
+                <!--User name-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/tv_user_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:text="user"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/textSizeCB" />
+                    <ImageView
+                        android:id="@+id/verifies_user"
+                        android:layout_width="105sp"
+                        android:layout_height="20sp"
+                        android:layout_gravity="right"
+                        android:scaleType="fitCenter"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/verified"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <RatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/CustomRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:isIndicator="true"
+                            android:numStars="5" />
+
+                        <TextView
+                            android:id="@+id/tv_number_of_offer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textSizeCB" />
+
+                        <!--<TextView-->
+                            <!--android:id="@+id/textView7"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:text=" 评价)"-->
+                            <!--android:textColor="@color/black"-->
+                            <!--android:textSize="@dimen/textSizeCB" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/layout_top_listview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+
+
+                </FrameLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/dialog_text_hint"
+            />
+        <ListView
+            android:id="@+id/lst_chat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFDDDDDD"
+            android:backgroundTint="#FFDDDDDD"
+            android:divider="@color/white"
+            android:dividerHeight="0dp"
+            android:transcriptMode="alwaysScroll">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/bottm_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <com.wo1haitao.controls.CustomEditextSoftkey
+                android:id="@+id/box_chat"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:imeOptions="actionNone"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:paddingLeft="15dp"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/ivSendMess"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/send_chat" />
+        </LinearLayout>
+    </LinearLayout>
+</com.wo1haitao.views.CustomLayoutMain>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    >
+    <LinearLayout
+
+        android:id="@+id/ll_content"
+        android:padding="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="true"
+        android:clipToPadding="true"
+        android:background="@drawable/layout_dropdown_border_radius"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/lv_item"
+            android:clipToPadding="true"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+           >
+        </ListView>
+        <Button
+            android:visibility="visible"
+            android:id="@+id/bt_done"
+            android:text="确定"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textColor="#007AFF"
+            android:background="@color/transparent"/>
+    </LinearLayout>
+
+</LinearLayout>

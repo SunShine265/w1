@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wo1haitao.activities.ProductDetailActivity">
+
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.wo1haitao.views.ActionBarProject>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_products"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </android.support.v4.view.ViewPager>
+
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/background_product" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/boder_product_top"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/ad_limmit"
+                    android:textColor="@color/colorPrimary" />
+
+                <LinearLayout
+                    android:id="@+id/ll_dots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name_product"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:text="XXIO Iron"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="right"
+                        android:src="@drawable/favories_icon" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical">
+
+                    <FrameLayout
+                        android:id="@+id/layout_avatar"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@drawable/user_circle"
+                        android:gravity="center">
+
+                        <com.wo1haitao.controls.RoundedImageView
+                            android:id="@+id/iv_user"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center" />
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+
+                            android:layout_gravity="bottom|right"
+                            android:src="@color/white" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="YourName1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize" />
+
+                            <ImageView
+                                android:layout_width="105sp"
+                                android:layout_height="20sp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/verified" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/star_filled" />
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/star_filled" />
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/star_filled" />
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/star_filled" />
+
+                            <ImageView
+                                android:layout_width="15sp"
+                                android:layout_height="15sp"
+                                android:src="@drawable/star_empty" />
+
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="45dp"
+                                android:text="(1 评价)"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/textSize" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/favories_icon" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/favories_icon" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="@string/sport_goods"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/textSize" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/favories_icon" />
+
+                        <com.wo1haitao.controls.CustomTextViewFixSize
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="@string/form_any_country"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/textSize" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <com.wo1haitao.controls.JustifyTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品您可能感兴趣的其它运动用品产品"
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/comment_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_row_bottom_border"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+
+                            android:gravity="center_vertical">
+
+                            <FrameLayout
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@drawable/user_circle"
+                                android:gravity="center">
+
+                                <com.wo1haitao.controls.RoundedImageView
+
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/photo" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+
+                                    android:layout_gravity="bottom|right"
+                                    android:src="@color/white" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <com.wo1haitao.controls.CustomTextViewFixSize
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YourName1"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textSize" />
+
+                                    <ImageView
+                                        android:layout_width="105sp"
+                                        android:layout_height="20sp"
+                                        android:layout_marginLeft="5dp"
+                                        android:src="@drawable/verified" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_empty" />
+
+                                    <com.wo1haitao.controls.CustomTextViewFixSize
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_marginLeft="45dp"
+                                        android:text="(1 评价)"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textSize" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/favories_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="20/10/2017 16:30"
+                                android:textColor="@color/grey_text" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="您可能感兴趣的其它运动用品产品" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/favories_icon" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/custom_row_bottom_border"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="55dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+
+                            android:gravity="center_vertical">
+
+                            <FrameLayout
+
+                                android:layout_width="80dp"
+                                android:layout_height="80dp"
+                                android:background="@drawable/user_circle"
+                                android:gravity="center">
+
+                                <com.wo1haitao.controls.RoundedImageView
+
+                                    android:layout_width="75dp"
+                                    android:layout_height="75dp"
+                                    android:layout_gravity="center"
+                                    android:src="@drawable/photo" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+
+                                    android:layout_gravity="bottom|right"
+                                    android:src="@color/white" />
+                            </FrameLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginTop="3dp"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <com.wo1haitao.controls.CustomTextViewFixSize
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="YourName1"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textSize" />
+
+                                    <ImageView
+                                        android:layout_width="105sp"
+                                        android:layout_height="20sp"
+                                        android:layout_marginLeft="5dp"
+                                        android:src="@drawable/verified" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal">
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_filled" />
+
+                                    <ImageView
+                                        android:layout_width="15sp"
+                                        android:layout_height="15sp"
+                                        android:src="@drawable/star_empty" />
+
+                                    <com.wo1haitao.controls.CustomTextViewFixSize
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+
+                                        android:layout_marginLeft="45dp"
+                                        android:text="(1 评价)"
+                                        android:textColor="@color/black"
+                                        android:textSize="@dimen/textSize" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/favories_icon" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="20/10/2017 16:30"
+                                android:textColor="@color/grey_text" />
+                        </LinearLayout>
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="您可能感兴趣的其它运动用品产品" />
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/favories_icon" />
+                        </FrameLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:background="@color/white">
+
+                     <com.wo1haitao.controls.CustomEditextSoftkey
+                        android:id="@+id/editText2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/custom_layout_border"
+                        android:gravity="top|left"
+                        android:hint="@string/hint_comment_product"
+                        android:inputType="textMultiLine"
+                        android:lines="6"
+                        android:maxLines="8"
+                        android:minLines="4"
+                        android:paddingBottom="2dp"
+                        android:paddingLeft="@dimen/activity_horizontal_xs_margin"
+                        android:paddingTop="2dp"
+                        android:scrollbars="vertical"
+                        android:textColorHint="@color/grey_text"
+                        android:textSize="@dimen/textSize" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginRight="23dp"
+                    android:background="@drawable/button_drable_dark"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/bt_send"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btnTextSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_grey"
+                android:orientation="vertical"
+                android:paddingBottom="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+                        <FrameLayout
+
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:background="@drawable/user_circle"
+                            android:gravity="center">
+
+                            <com.wo1haitao.controls.RoundedImageView
+
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/photo" />
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+
+                                android:layout_gravity="bottom|right"
+                                android:src="@color/white" />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ems="4"
+                                    android:text="Other1"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textSize" />
+
+                                <ImageView
+                                    android:layout_width="105sp"
+                                    android:layout_height="20sp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/verified" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/star_filled" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/star_filled" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/star_filled" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/star_filled" />
+
+                                <ImageView
+                                    android:layout_width="15sp"
+                                    android:layout_height="15sp"
+                                    android:src="@drawable/star_empty" />
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="35dp"
+                                    android:text="(1 评价)"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textSize" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:background="@drawable/custom_yellow_product"
+                      android:padding="5dp"
+                      android:textColor="@color/yellow_product_detail"
+                      android:layout_marginRight="10dp"
+                      android:text="代购的出价 ¥ 250"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/lower_simpol"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/custom_blue_product"
+                        android:padding="5dp"
+                        android:textColor="@color/blue_product_detail"
+                        android:text="买家的还价 ¥200"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btnHeight"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/button_drable_dark"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="回应"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/btnTextSize" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

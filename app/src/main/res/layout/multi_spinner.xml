@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/profile_menu">
+
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minEms="10"
+            android:padding="10dp"
+            android:minHeight="@dimen/textSizeLarge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_multi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:fadeScrollbars="false">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <com.wo1haitao.controls.CustomTextViewFixSize
+            android:id="@+id/tv_send_report"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_drable_profile_menu"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="@dimen/textSizeLarge"
+            android:padding="15dp"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textSize" />
+    </LinearLayout>
+</LinearLayout>

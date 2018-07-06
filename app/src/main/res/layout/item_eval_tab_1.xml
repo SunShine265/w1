@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_row_bottom_border_dark"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/white">
+
+                <com.wo1haitao.controls.CustomImageViewFitSize
+                    custom:fit_height = "224"
+                    custom:fit_width = "224"
+                    android:id="@+id/img_product"
+                    android:layout_width="@dimen/length_image"
+                    android:layout_height="@dimen/length_image"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/hinh_demo" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:ellipsize="end"
+                        android:gravity="top"
+                        android:lines="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="44px" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="bottom">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:id="@+id/tv_category"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center|left"
+                                    android:lines="1"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/black"
+                                    android:textSize="44px" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <com.wo1haitao.controls.CustomTextViewFixSize
+                                    android:id="@+id/tv_country"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="center|left"
+                                    android:lines="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="44px" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right|center">
+                            <com.wo1haitao.controls.CustomTextViewFixSize
+                                android:id="@+id/btn_my_review"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#403F45"
+                                android:padding="6dp"
+                                android:text="@string/btn_save_my_review"
+                                android:textColor="@color/white"
+                                android:textSize="46px"/>
+                        </LinearLayout>
+
+                        <!--<Button-->
+                            <!--android:id="@+id/btn_my_review"-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_gravity="right"-->
+                            <!--android:background="#403F45"-->
+                            <!--android:text="@string/btn_save_my_review"-->
+                            <!--android:textColor="@color/white"-->
+                            <!--android:textSize="@dimen/textSizeDD" />-->
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

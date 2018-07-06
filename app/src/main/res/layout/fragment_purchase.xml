@@ -1,0 +1,234 @@
+<com.wo1haitao.views.CustomLayoutMain xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_general"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_grey"
+    android:orientation="vertical"
+    tools:context="com.wo1haitao.fragments.PurchaseSearchCountryFragment">
+
+    <com.wo1haitao.views.ActionBarProject
+        android:id="@+id/my_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.wo1haitao.views.ActionBarProject>
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="35dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_top_verify"
+                android:textAlignment="center"
+                android:textColor="@color/dialog_text_hint"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1.5"/>
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp">
+
+                <Button
+                    android:id="@+id/btAll"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounded_button"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/all"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </FrameLayout>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1.5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+
+                    android:id="@+id/btEro"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounded_button"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/europe"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btAsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounded_button"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/asia"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/btAme"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounded_button"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/america"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp">
+
+                <Button
+                    android:id="@+id/btAus"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/rounded_button"
+                    android:lines="1"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/aus"
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+            </FrameLayout>
+            <!--<FrameLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btMiddleEast"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:lines="1"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:text="@string/middleeast"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="15dp" />-->
+            <!--</FrameLayout>-->
+
+        </LinearLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<FrameLayout-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_marginTop="3dp">-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/btAus"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:layout_margin="2dp"-->
+                    <!--android:background="@drawable/rounded_button"-->
+                    <!--android:lines="1"-->
+                    <!--android:paddingLeft="10dp"-->
+                    <!--android:paddingRight="10dp"-->
+                    <!--android:text="@string/aus"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:textSize="15dp" />-->
+            <!--</FrameLayout>-->
+
+            <!--&lt;!&ndash;<FrameLayout&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_marginTop="3dp">&ndash;&gt;-->
+
+                <!--&lt;!&ndash;<Button&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:id="@+id/btOtherArea"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="35dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_margin="2dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:background="@drawable/rounded_button"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:lines="1"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:paddingLeft="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:paddingRight="10dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="@string/other"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textColor="@color/black"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="15dp" />&ndash;&gt;-->
+            <!--&lt;!&ndash;</FrameLayout>&ndash;&gt;-->
+
+
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/lo_list_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9dp"
+                android:minHeight="40dp"
+                android:orientation="vertical"></LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.wo1haitao.views.CustomLayoutMain>

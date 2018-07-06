@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ln_bottom_bar_project"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:id="@+id/tab_home"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/btn_to_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingTop="2dp">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                android:id="@+id/img_home"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:background="@drawable/home"
+                android:clickable="false"
+                app:fit_height="70"
+                app:fit_width="70" />
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="主页"
+                android:textColor="@color/white"
+                android:textSize="36px" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tab_notification"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/btn_to_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.wo1haitao.controls.CustomImageViewFitSize
+                        android:id="@+id/img_notification"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_gravity="center"
+                        android:background="@drawable/notification"
+                        android:clickable="false"
+                        app:fit_height="70"
+                        app:fit_width="70" />
+                </FrameLayout>
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="通知"
+                    android:textColor="@color/white"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/ln_notification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.wo1haitao.controls.CustomImageViewFitSize
+                        android:layout_width="62px"
+                        android:layout_height="40px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/display_count"
+                        app:fit_height="40"
+                        app:fit_width="62" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_num_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="3"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24px" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tab_chat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/btn_to_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="8dp">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.wo1haitao.controls.CustomImageViewFitSize
+                        android:id="@+id/img_chat"
+                        android:layout_width="70px"
+                        android:layout_height="70px"
+                        android:layout_gravity="center"
+                        android:background="@drawable/chat"
+                        android:clickable="false"
+                        app:fit_height="70"
+                        app:fit_width="70" />
+
+                </FrameLayout>
+
+
+                <com.wo1haitao.controls.CustomTextViewFixSize
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="站内信"
+                    android:textColor="@color/white"
+                    android:textSize="36px" />
+            </LinearLayout>
+
+            <!--<FrameLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="-1dp"-->
+            <!--android:layout_gravity="center_vertical|top"-->
+            <!--&gt;-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="20dp"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:src="@drawable/display_count" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_num_notification"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="3"-->
+            <!--android:layout_gravity="center_vertical|center_horizontal"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:textSize="10dp" />-->
+            <!--</FrameLayout>-->
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1" />
+
+            <FrameLayout
+                android:id="@+id/ln_chat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:visibility="gone">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.wo1haitao.controls.CustomImageViewFitSize
+                        android:layout_width="62px"
+                        android:layout_height="40px"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/display_count"
+                        app:fit_height="40"
+                        app:fit_width="62" />
+
+                    <com.wo1haitao.controls.CustomTextViewFixSize
+                        android:id="@+id/tv_num_chat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+
+                        android:text="3"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="24px" />
+                </FrameLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <!--<FrameLayout-->
+    <!--android:id="@+id/tab_chat"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<LinearLayout-->
+    <!--android:id="@+id/btn_to_chat"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:gravity="center"-->
+    <!--android:padding="8dp"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/img_chat"-->
+    <!--android:layout_width="22dp"-->
+    <!--android:layout_height="22dp"-->
+    <!--android:clickable="false"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:background="@drawable/chat" />-->
+
+    <!--<TextView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:text="站内信"-->
+    <!--android:textColor="@color/white"-->
+    <!--android:textSize="12dp" />-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+    <!--android:id="@+id/ln_chat"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone">-->
+
+    <!--<View-->
+    <!--android:layout_width="45dp"-->
+    <!--android:layout_height="wrap_content"/>-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center_vertical|top"-->
+    <!--android:layout_marginBottom="40dp"-->
+    <!--android:padding="2dp">-->
+
+    <!--<ImageView-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:src="@drawable/display_count" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_num_chat"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="3"-->
+    <!--android:layout_gravity="center_vertical|center_horizontal"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="10dp" />-->
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
+
+    <FrameLayout
+        android:id="@+id/tab_profile"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/btn_to_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <com.wo1haitao.controls.CustomImageViewFitSize
+                android:id="@+id/ln_profile"
+                android:layout_width="70px"
+                android:layout_height="70px"
+                android:layout_gravity="center"
+                android:background="@drawable/profile"
+                android:clickable="false"
+                android:focusable="true"
+                app:fit_height="70"
+                app:fit_width="70" />
+
+            <com.wo1haitao.controls.CustomTextViewFixSize
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我的账户"
+                android:textColor="@color/white"
+                android:textSize="36px" />
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

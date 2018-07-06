@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="@dimen/actionBar"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="3dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/ib_back_action"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:tint="@color/white"
+            android:layout_marginLeft="20dp"
+
+            app:srcCompat="@drawable/back_bt_arrow" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/custom_layout_border_just_bottom"
+        android:paddingBottom="3dp"
+        android:paddingLeft="-3dp"
+        android:paddingRight="0dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/ivSearch"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:paddingRight="-5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/edtSearch"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/favories_icon" />
+
+        <ImageView
+            android:id="@+id/ivCammera"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/ivSearch"
+            android:layout_toLeftOf="@+id/ivSearch"
+            android:layout_toStartOf="@+id/ivSearch"
+            android:tint="@color/white"
+            app:srcCompat="@drawable/favories_icon" />
+
+        <com.wo1haitao.controls.CustomEditextSoftkey
+            android:id="@+id/edtSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/ivCammera"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:theme="@style/AppTheme.Cursor"
+            android:inputType="textPersonName"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</LinearLayout>
